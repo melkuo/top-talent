@@ -41,6 +41,13 @@
       background-color: #000;
       color: #FAF2F0;
       font-family: 'Arizona Flare', sans-serif;
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: 720px) {
+      body {
+        font-size: 14px;
+      }
     }
     
     .container {
@@ -60,19 +67,22 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
-      margin: 5em 0.5em;
+      margin: 5em 0;
+    }
+
+    .body {
+      margin: 0 0.5em;
     }
 
     h1 {
       font-size: 6em;
       font-weight: 400;
-      margin-bottom: 0.25em;
     }
 
     p {
       font-size: 1.4em;
       line-height: 1.5;
-      margin-bottom: 3em;
+      margin: 1em 0 3em;
       max-width: 500px;
     }
 
@@ -120,7 +130,7 @@
 <body>
   <div class="container">
     <div class="main">
-      <div>
+      <div class="body">
         <h1>Top Talent</h1>
         <p>Curated network of the best builders and companies. Work&nbsp;in&nbsp;<span>excellence</span>.</p>
         <div>
