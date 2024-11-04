@@ -1,0 +1,129 @@
+@font-face { font-family: 'Arizona Flare'; src: url('fonts/ABCArizonaFlareVariable-Trial.ttf'); } 
+@font-face { font-family: 'Arizona Sans'; src: url('fonts/ABCArizonaSansVariable-Trial.ttf'); } 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    color: #FAF2F0;
+    font-family: 'Arizona Flare', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 720px) {
+    body {
+    font-size: 14px;
+    }
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 100vh;
+    min-width: 350px;
+    padding: 1em;
+    text-align: center;
+}
+
+.main {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5em 0;
+}
+
+.body {
+    margin: 0 0.5em;
+}
+
+.title {
+    font-size: 6em;
+    font-weight: 400;
+}
+
+.page-title {
+    font-size: 3em;
+    margin: 1em 0;
+    text-align: left;
+}
+
+.subtitle {
+    font-size: 1.4em;
+    line-height: 1.5;
+    margin: 1em 0 3em;
+    max-width: 500px;
+}
+
+.button-container {
+    margin: 2em 0;
+}
+
+.button {
+    display: inline-block;
+    border: 2px solid #FAF2F0;
+    border-radius: 10px;
+    color: #FAF2F0;
+    font-family: 'Arizona Sans', sans-serif;
+    font-size: 1.1em;
+    font-weight: normal;
+    margin: 0.5em;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    &:hover {
+    background-color: #FAF2F0;
+    color: #000;
+    }
+}
+
+.logo {
+    color: #fff;
+    display: inline-block;
+    font-family: 'Lilita One';
+    font-size: 1.75em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.image {
+    display: block;
+    height: auto;
+    max-width: 750px;
+    width: 100%;
+}
+
+.faq-section {
+    font-family: "Arizona Sans", sans-serif;
+    line-height: 1.4;
+    margin-bottom: 4em;
+    max-width: 700px;
+    text-align: left;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links {
+    display: inline-block;
+    margin: 1em;
+
+    > * {
+        margin: 0.5em;
+    }
+}
