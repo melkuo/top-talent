@@ -132,11 +132,15 @@
     .manifesto h2 {
       font-size: 2em;
       margin-bottom: 0.5em;
+
+      @media screen and (max-width: 720px) {
+        font-size: 1.5em;
+      }
     }
 
     .manifesto p {
       margin: 0 auto;
-      min-width: 400px;
+      min-width: 300px;
       width: 60%;
     }
 
@@ -212,7 +216,6 @@
 
     .testimonial {
       max-width: 500px;
-      min-width: 300px;
       margin: 3em;
       text-align: center;
     }
