@@ -27,7 +27,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QC5GZQPBZ9"></script>
@@ -38,81 +37,142 @@
 
     gtag('config', 'G-QC5GZQPBZ9');
   </script>
+
+  <style>
+    @font-face { font-family: 'Arizona Flare'; src: url('fonts/ABCArizonaFlareVariable-Trial.ttf'); } 
+    @font-face { font-family: 'Arizona Sans'; src: url('fonts/ABCArizonaSansVariable-Trial.ttf'); } 
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #fff9f2;
+      font-family: 'Arizona Flare', sans-serif;
+      font-size: 16px;
+      min-height: 100vh;
+      min-width: 375px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin: 3em 0 1em;
+    }
+
+    .container {
+      margin: 5rem auto;
+      max-width: 700px;
+    }
+
+    .faq-section {
+      margin-bottom: 3em;
+    }
+
+    .footer {
+      background-color: #fff;
+      border-top-left-radius: 2em;
+      border-top-right-radius: 2em;
+      display: flex;
+      flex-direction: column;
+      padding: 3em 0 1em 0;
+      text-align: center;
+    }
+
+    .footer-links {
+      display: inline-block;
+      margin: 1em;
+
+      > * {
+        color: #000;
+        margin: 0.5em;
+        text-decoration: none;
+      }
+    }
+
+    .logo {
+      color: #000;
+      display: inline-block;
+      font-family: 'Lilita One';
+      font-size: 1.75em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <div class="body">
-      <h1 class="page-title">FAQ</h1>
-      <div class="faq-section">
-        <h2>What is Top Talent?</h2>
-        <p>Top Talent is a curated network of the best builders and companies. We help great people find their next great role, and help companies get access to elite candidates they may not find through traditional hiring methods.</p>
-      </div>
-      <div class="faq-section">
-        <h2>What makes Top Talent different?</h2>
-        <p>The best hires don't happen through job postings &ndash; they happen through your network.</p><br/>
-        <p>If you're looking for your next great role, we'll put your profile directly in front of top companies in our network. Your profile will be anonymized, which is perfect for passive job seekers who may not want everyone to know that they're looking.</p><br/>
-        <p>For companies, you'll get access to our pool of pre-vetted candidates. These are top candidates that may not even be on the job market otherwise.</p>
-      </div>
-      <div class="faq-section">
-        <h2>What kind of companies do you work with?</h2>
-        <p>We aim to work with growing companies with high-impact roles. We tend to work with early-stage companies (team sizes of <50), though we're growing our network and open to working with all.</p>
-      </div>
-      <div class="faq-section"></div>
-        <h2>Do you have remote roles?</h2>
-        <p>Yes, we work with companies that are hiring remote, hybrid and onsite. Most of our companies hire onsite in Toronto, San Francisco or New York City.</p>
-      </div>
-      <div class="faq-section">
-        <h2>I applied as a talent &ndash; what are next steps?</h2>
-        <p>We'll reach out with next steps if we think you're a good fit for the companies we're working with. Since we're in beta and actively growing the companies we work with, it may take us a while to review your application. You'll hear from us when you're being considered for a talent drop.</p>
-      </div>
-      <div class="faq-section">
-        <h2>I applied as a company &ndash; what are next steps?</h2>
-        <p>We'll review your application to make sure it's a good fit and we're able to support your hiring needs. You'll hear from us shortly with next steps.</p>
-      </div>
-      <div class="faq-section">
-        <h2>How does the process work for talent?</h2>
-        <p>You'll get an email from us when you're about to be included in the next talent drop. If any companies are interested in connecting, we'll send follow-up emails to you. You'll have <u>24 hours</u> to accept the introduction. We'll then connect you with the company for you to coordinate a call.</p><br/>
-        <p>If you know the company won't be a good fit, there's no pressure to take the call. However, in order to ensure a positive experience for all those on our platform, we reserve the right to remove you from our network if we deem acceptance rates to be too low.</p>
-      </div>
-      <div class="faq-section">
-        <h2>How are the talent anonymized?</h2>
-        <p>For example, companies will see "Software Engineer, early-stage AI automation platform".</p>
-      </div>
-      <div class="faq-section">
-        <h2>How does the weekly talent drop work for companies?</h2>
-        <p>Every week, we'll email companies a list of ~5-10 fresh candidates. You can request an intro to any that you're interested in. If the candidate reciprocates interest, we'll send a follow-up email to make the introduction. There's no limit to how many intros you can request.</p>
-      </div>
-      <div class="faq-section">
-        <h2>How are candidates selected for the weekly drop?</h2>
-        <p>Candidates are vetted based on their career achievements, skills and potential for impact. We focus on those with a demonstrated history of delivering results. Our heuristic is: people we ourselves would be excited to interview.</p>
-      </div>
-      <div class="faq-section">
-        <h2>Can I browse talent that was dropped in previous weeks?</h2>
-        <p>Yes, a link to the full list of actively-looking talent will be included in every drop email.</p>
-      </div>
-      <div class="faq-section">
-        <h2>What type of talent can companies expect in the drop?</h2>
-        <p>We pull from our talent pool based on the needs of the companies we're working with at the time. Expect predominantly Software Engineers, Product Designers and Product Managers, with the occasional Strategy/Operations and Leadership candidates. Expect primarily mid and senior level candidates, with the occasional entry, junior and exec level. Our network of talent is strongest in Toronto, San Francisco and New York City.</p>
-      </div>
-      <div class="faq-section">
-        <h2>What locations does Top Talent operate in?</h2>
-        <p>Our network is currently best poised to serve those located in the US and Canada.</p>
-      </div>
-      <div class="faq-section">
-        <h2>How much does it cost for talent looking for their next role?</h2>
-        <p>It's 100% completely free to join Top Talent as a talent. No account is required.</p>
-      </div>
-      <div class="faq-section">
-        <h2>How much does it cost for companies looking to hire?</h2>
-        <p>We want our incentives to be aligned with yours. We take a small amount upfront, with the bulk of what we earn paid out as a bonus once a successful hire is made. We'll be in touch with the exact payment amounts after sign-up.</p>
-      </div>
+    <h1>FAQ</h1>
+    <div class="faq-section">
+      <h2>What is Top Talent?</h2>
+      <p>Top Talent is a curated network of the best builders and companies. We help great people find their next great role, and help companies get access to elite candidates they may not find through traditional hiring methods.</p>
     </div>
-    <div class="footer"></div>
-      <a href="https://linktr.ee/535toronto" target="_blank" class="logo" onclick="gtag('event', 'click', { 'event_category': 'Button', 'event_label': 'Studio 535 Logo' });">Studio 535</a>
-      <div class="footer-links">
-        <a href="./index.html">Home</a>
-        <a href="mailto:hi@jointoptalent.co">Contact</a>
-      </div>
+    <div class="faq-section">
+      <h2>What makes Top Talent different?</h2>
+      <p>The best hires don't happen through job postings &ndash; they happen through your network.</p><br/>
+      <p>If you're looking for your next great role, we'll put your profile directly in front of top companies in our network. Your profile will be anonymized, which is perfect for passive job seekers who may not want everyone to know that they're looking.</p><br/>
+      <p>For companies, you'll get access to our pool of pre-vetted candidates. These are top candidates that may not even be on the job market otherwise.</p>
+    </div>
+    <div class="faq-section">
+      <h2>What kind of companies do you work with?</h2>
+      <p>We aim to work with growing companies with high-impact roles. We tend to work with early-stage companies (team sizes of <50), though we're growing our network and open to working with all.</p>
+    </div>
+    <div class="faq-section">
+      <h2>Do you have remote roles?</h2>
+      <p>Yes, we work with companies that are hiring remote, hybrid and onsite. Most of our companies hire onsite in Toronto, San Francisco or New York City.</p>
+    </div>
+    <div class="faq-section">
+      <h2>I applied as a talent &ndash; what are next steps?</h2>
+      <p>We'll reach out with next steps if we think you're a good fit for the companies we're working with. Since we're in beta and actively growing the companies we work with, it may take us a while to review your application. You'll hear from us when you're being considered for a talent drop.</p>
+    </div>
+    <div class="faq-section">
+      <h2>I applied as a company &ndash; what are next steps?</h2>
+      <p>We'll review your application to make sure it's a good fit and we're able to support your hiring needs. You'll hear from us shortly with next steps.</p>
+    </div>
+    <div class="faq-section">
+      <h2>How does the process work for talent?</h2>
+      <p>You'll get an email from us when you're about to be included in the next talent drop. If any companies are interested in connecting, we'll send follow-up emails to you. You'll have <u>24 hours</u> to accept the introduction. We'll then connect you with the company for you to coordinate a call.</p><br/>
+      <p>If you know the company won't be a good fit, there's no pressure to take the call. However, in order to ensure a positive experience for all those on our platform, we reserve the right to remove you from our network if we deem acceptance rates to be too low.</p>
+    </div>
+    <div class="faq-section">
+      <h2>How are the talent anonymized?</h2>
+      <p>For example, companies will see "Software Engineer, early-stage AI automation platform".</p>
+    </div>
+    <div class="faq-section">
+      <h2>How does the weekly talent drop work for companies?</h2>
+      <p>Every week, we'll email companies a list of ~5-10 fresh candidates. You can request an intro to any that you're interested in. If the candidate reciprocates interest, we'll send a follow-up email to make the introduction. There's no limit to how many intros you can request.</p>
+    </div>
+    <div class="faq-section">
+      <h2>How are candidates selected for the weekly drop?</h2>
+      <p>Candidates are vetted based on their career achievements, skills and potential for impact. We focus on those with a demonstrated history of delivering results. Our heuristic is: people we ourselves would be excited to interview.</p>
+    </div>
+    <div class="faq-section">
+      <h2>Can I browse talent that was dropped in previous weeks?</h2>
+      <p>Yes, a link to the full list of actively-looking talent will be included in every drop email.</p>
+    </div>
+    <div class="faq-section">
+      <h2>What type of talent can companies expect in the drop?</h2>
+      <p>We pull from our talent pool based on the needs of the companies we're working with at the time. Expect predominantly Software Engineers, Product Designers and Product Managers, with the occasional Strategy/Operations and Leadership candidates. Expect primarily mid and senior level candidates, with the occasional entry, junior and exec level. Our network of talent is strongest in Toronto, San Francisco and New York City.</p>
+    </div>
+    <div class="faq-section">
+      <h2>What locations does Top Talent operate in?</h2>
+      <p>Our network is currently best poised to serve those located in the US and Canada.</p>
+    </div>
+    <div class="faq-section">
+      <h2>How much does it cost for talent looking for their next role?</h2>
+      <p>It's 100% completely free to join Top Talent as a talent. No account is required.</p>
+    </div>
+    <div class="faq-section">
+      <h2>How much does it cost for companies looking to hire?</h2>
+      <p>We want our incentives to be aligned with yours. We take a small amount upfront, with the bulk of what we earn paid out as a bonus once a successful hire is made. We'll be in touch with the exact payment amounts after sign-up.</p>
     </div>
   </div>
+  <section class="footer">
+    <a href="https://linktr.ee/535toronto" target="_blank" class="logo" onclick="gtag('event', 'click', { 'event_category': 'Button', 'event_label': 'Studio 535 Logo' });">Studio 535</a>
+    <div class="footer-links">
+      <a href="./index.html">Home</a>
+      <a href="mailto:hi@jointoptalent.co">Contact</a>
+    </div>
+  </section>
 </body>
