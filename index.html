@@ -55,6 +55,10 @@
       text-align: center;
     }
 
+    section {
+      padding: 2em;
+    }
+
     a {
       color: #000;
     }
@@ -208,8 +212,7 @@
     .testimonial-container {
       justify-content: center;
       display: flex;
-      margin: 10rem auto;
-      padding: 2em;
+      margin: 0 auto 10rem;
 
       @media screen and (max-width: 720px) {
         flex-direction: column;
@@ -218,26 +221,61 @@
     }
 
     .testimonial {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       max-width: 500px;
       margin: 3em;
       text-align: center;
     }
 
+    .profile-picture {
+      border-radius: 50%;
+      height: auto;
+      max-width: 40px;
+    }
+    
     .quote {
       font-size: 1.5em;
     }
 
+    .author-container {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin-top: 0.5em;
+    }
+    
     .author {
       color: #555; 
       font-family: 'Arizona Sans';
       font-size: 1.2em;
-      margin-top: 0.5em;
+      margin-left: 0.5em;
+      text-align: left;
+    }
+
+    .referral {
+      background-color: #fff;
+      border-radius: 2rem;
+      margin: 0 auto;
+      max-width: 1500px;
+      padding: 4em;
+    }
+
+    .referral h1 { 
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+
+    .referral p {
+      font-size: 1.5em;
+      margin: 0 auto;
+      max-width: 500px;
     }
 
     .faq {
       margin: 10em auto;
       max-width: 800px;
-      padding: 0 2em;
       text-align: left;
     }
 
@@ -342,12 +380,24 @@
     <div class="testimonial-container">
       <div class="testimonial">
         <p class="quote">"I've never gotten a job by applying to it. It's always been referrals or someone reaching out to me."</p>
-        <p class="author">- Jason Liu, ML Consultant</p>
+        <div class="author-container">
+          <img src="./images/jason.jpg" alt="Jason Liu Profile Picture" class="profile-picture">
+          <p class="author">Jason Liu, ML Consultant</p>
+        </div>
       </div>
       <div class="testimonial">
         <p class="quote">"Experience felt curated to me... happy with how smooth things went."</p>
-        <p class="author">- Founding Engineer, hired via Top Talent in <3 weeks</p>
+        <div class="author-container">
+          <img src="./images/anon.jpg" class="profile-picture">
+          <p class="author">Founding Engineer<br />Hired via Top Talent in <3 weeks</p>
+        </div>
       </div>
+    </div>
+  </section>
+  <section>
+    <div class="referral">
+      <h1>Refer a friend to Top Talent to earn $250</h1>
+      <p>Mention your name during sign-up and we'll send you $250 when they get hired</p>
     </div>
   </section>
   <section>
@@ -369,6 +419,11 @@
       <details>
         <summary>Do you have remote roles?</summary>
         <p>Yes, we work with companies hiring both onsite and remote. You'll be able to specify your preference on sign-up.</p>
+      </details>
+      <details>
+        <summary>How do I refer friends?</summary>
+        <p>When your friend signs-up for Top Talent, they'll be asked, "How did you hear about Top Talent?". They can share your name then.</p>
+        <p>If your friend gets hired through Top Talent, we'll send you $250. No account required.</p>
       </details>
     </div>
   </section>
