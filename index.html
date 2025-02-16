@@ -63,6 +63,11 @@
       color: #000;
     }
 
+    p {
+      font-family: 'Arizona Sans', Helvetica, sans-serif;
+      font-weight: 300;
+    }
+
     .hero {
       height: 100vh;
       width: 100%;
@@ -129,6 +134,47 @@
       }
     }
 
+
+    .companies {
+      margin: 4em auto;
+      padding: 0 2em;
+    }
+
+    .companies h3 {
+      color: #373734;
+      font-family: 'Arizona Sans', Helvetica, sans-serif;
+      font-size: 1em;
+      font-weight: 400;
+      letter-spacing: 2px;
+      margin-bottom: 2em;
+      text-transform: uppercase;
+    }
+
+    .company-logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6em;
+      flex-wrap: wrap;
+    }
+
+    .company-logo {
+      max-height: 40px;
+      width: 10rem;
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
+
+    @media screen and (max-width: 720px) {
+      .company-logos {
+        gap: 2em;
+      }
+      
+      .company-logo {
+        height: 30px;
+      }
+    }
+
     .manifesto {
       font-size: 1.5em;
       margin: 10em auto;
@@ -138,7 +184,7 @@
 
     .manifesto h2 {
       font-size: 2em;
-      margin-bottom: 0.5em;
+      margin-bottom: 1em;
 
       @media screen and (max-width: 720px) {
         font-size: 1.5em;
@@ -187,6 +233,7 @@
     }
 
     .card li {
+      font-weight: 300;
       margin-bottom: 0.75em;
     }
 
@@ -196,7 +243,6 @@
       border: 2px solid #000;
       color: #000;
       border-radius: 1em;
-      font-family: 'Arizona Sans', sans-serif;
       font-weight: 500;
       margin: 0.5em;
       padding: 0.75em 1.5em;
@@ -210,23 +256,47 @@
     }
 
     .testimonial-container {
-      justify-content: center;
       display: flex;
+      justify-content: flex-start;
       margin: 0 auto 10rem;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
 
-      @media screen and (max-width: 720px) {
-        flex-direction: column;
-        justify-content: space-between;
+    .testimonial-scroll {
+      animation: scroll 30s linear infinite;
+      display: flex;
+      gap: 2em;
+      padding: 0 1em;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-100% / 2));
       }
     }
 
     .testimonial {
+      background-color: #fff;
+      border-radius: 2rem;
       display: flex;
       flex-direction: column;
+      flex: 0 0 auto;
       justify-content: space-between;
       max-width: 500px;
-      margin: 3em;
-      text-align: center;
+      min-width: 350px;
+      margin: 1em;
+      padding: 3em;
+      text-align: left;
+
+      @media screen and (max-width: 720px) {
+        min-width: 300px;
+        padding: 2em;
+      }
     }
 
     .profile-picture {
@@ -236,20 +306,19 @@
     }
     
     .quote {
-      font-size: 1.5em;
+      color: #373734;
+      font-size: 1.1em;
     }
 
     .author-container {
       align-items: center;
       display: flex;
-      justify-content: center;
-      margin-top: 0.5em;
+      margin-top: 1em;
     }
     
     .author {
-      color: #555; 
-      font-family: 'Arizona Sans';
-      font-size: 1.2em;
+      color: #373734; 
+      font-size: 1em;
       margin-left: 0.5em;
       text-align: left;
     }
@@ -297,7 +366,6 @@
     }
 
     .faq p {
-      font-family: 'Arizona Sans';
       font-size: 1.1em;
       margin-bottom: 0.5em;
       padding: 0 2em;
@@ -344,6 +412,15 @@
       <p class="subtitle">Curated network of the best builders and companies. Work&nbsp;in&nbsp;<i>excellence</i>.</p>
     </div>
   </section>
+  <section class="companies">
+    <h3>Trusted by top startups</h3>
+    <div class="company-logos">
+      <img src="./images/store-dot-dev-logo.svg" alt="Store Dot Dev Logo" class="company-logo">
+      <img src="./images/cobrand-logo.svg" alt="Cobrand Logo" class="company-logo">
+      <img src="./images/composer-logo.svg" alt="Composer Logo" class="company-logo">
+      <img src="./images/first-principles-logo.svg" alt="First Principles Logo" class="company-logo">
+    </div>
+  </section>
   <section class="manifesto">
     <div>
       <h2>The best people don't apply to jobs &ndash; jobs come to them</h2>
@@ -353,7 +430,7 @@
       <div class="card-container">
         <div class="card">
           <div>
-            <h3>For top talent</h3>
+            <h3>For Top Talent</h3>
             <ul>
               <li>No login required</li>
               <li>Anonymized profile allows for discrete search</li>
@@ -365,7 +442,7 @@
         </div>
         <div class="card">
           <div>
-            <h3>For top companies</h3>
+            <h3>For Top Companies</h3>
             <ul>
               <li>No login required</li>
               <li>Curated list of new candidates every week to your inbox</li>
@@ -380,18 +457,49 @@
   </section>
   <section>
     <div class="testimonial-container">
-      <div class="testimonial">
-        <p class="quote">"I've never gotten a job by applying to it. It's always been referrals or someone reaching out to me."</p>
-        <div class="author-container">
-          <img src="./images/jason.jpg" alt="Jason Liu Profile Picture" class="profile-picture">
-          <p class="author">Jason Liu, ML Consultant</p>
+      <div class="testimonial-scroll">
+        <div class="testimonial">
+          <p class="quote">"I've never gotten a job by applying to it. <strong>It's always been referrals</strong> or someone reaching out to me."</p>
+          <div class="author-container">
+            <img src="./images/jason.jpg" alt="Jason Liu Profile Picture" class="profile-picture">
+            <p class="author">Jason Liu<br />ML Consultant</p>
+          </div>
         </div>
-      </div>
-      <div class="testimonial">
-        <p class="quote">"Experience felt curated to me... happy with how smooth things went."</p>
-        <div class="author-container">
-          <img src="./images/anon.jpg" class="profile-picture">
-          <p class="author">Founding Engineer<br />Hired via Top Talent in <3 weeks</p>
+        <div class="testimonial">
+          <p class="quote">"Love that everything was over email and that I didn't have to navigate around another app. <strong>Experience felt curated to me</strong>... happy with how smooth things went."</p>
+          <div class="author-container">
+            <img src="./images/anon.jpg" class="profile-picture">
+            <p class="author">Founding Engineer<br />Hired via Top Talent in <3 weeks</p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p class="quote">"I was introduced to multiple super interesting well-funded companies. I would have never applied to them on my own because their job listings were either not public or posted ages ago. <strong>It was like having a well-connected friend put in a good word for you</strong>"</p>
+          <div class="author-container">
+            <img src="./images/vishnu.jpeg" class="profile-picture">
+            <p class="author">Vishnu<br />Hired via Top Talent in <4 weeks</p>
+          </div>
+        </div>
+        <!-- Duplicate testimonials for seamless loop -->
+        <div class="testimonial">
+          <p class="quote">"I've never gotten a job by applying to it. <strong>It's always been referrals</strong> or someone reaching out to me."</p>
+          <div class="author-container">
+            <img src="./images/jason.jpg" alt="Jason Liu Profile Picture" class="profile-picture">
+            <p class="author">Jason Liu<br />ML Consultant</p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p class="quote">"Love that everything was over email and that I didn't have to navigate around another app. <strong>Experience felt curated to me</strong>... happy with how smooth things went."</p>
+          <div class="author-container">
+            <img src="./images/anon.jpg" class="profile-picture">
+            <p class="author">Founding Engineer<br />Hired via Top Talent in <3 weeks</p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p class="quote">"I was introduced to multiple super interesting well-funded companies. I would have never applied to them on my own because their job listings were either not public or posted ages ago. <strong>It was like having a well-connected friend put in a good word for you</strong>"</p>
+          <div class="author-container">
+            <img src="./images/vishnu.jpeg" class="profile-picture">
+            <p class="author">Vishnu<br />Hired via Top Talent in <4 weeks</p>
+          </div>
         </div>
       </div>
     </div>
