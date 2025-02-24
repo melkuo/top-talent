@@ -158,22 +158,21 @@
       align-items: center;
       gap: 6em;
       flex-wrap: wrap;
+
+      @media screen and (max-width: 1000px) {
+        gap: 2em;
+      }
     }
 
     .company-logo {
       max-height: 40px;
-      width: 10rem;
+      max-width: 10rem;
       opacity: 0.8;
       transition: opacity 0.3s ease;
-    }
 
-    @media screen and (max-width: 720px) {
-      .company-logos {
-        gap: 2em;
-      }
-      
-      .company-logo {
+      @media screen and (max-width: 1000px) {
         height: 30px;
+        max-width: 7rem;
       }
     }
 
@@ -296,7 +295,7 @@
       text-align: left;
 
       @media screen and (max-width: 720px) {
-        min-width: 300px;
+        width: 300px;
         padding: 2em;
       }
     }
